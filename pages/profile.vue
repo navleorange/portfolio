@@ -3,7 +3,19 @@
 /* 一旦ここにcssを直接かく(いい方法を模索中) */
 
 #self_introduce{
-    width: 80%;
+
+    p{
+        width: 85%;
+    }
+
+    @include mq(full){
+        width: 40%;
+    }
+
+    @include mq(xl){
+        width: 40%;
+    }
+
     height: 30%;
     display: flex;
     justify-content: space-between;
