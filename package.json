@@ -1,9 +1,9 @@
 {
-  "name": "portfolio-nuxt",
+  "name": "portfolio",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -14,9 +14,14 @@
     "core-js": "^3.25.3",
     "nuxt": "^3.11.1",
     "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
+    "vue-template-compiler": "^2.7.10",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:navleorange/portfolio.git",
+  "author": "navleorange",
+  "license": "MIT"
 }
