@@ -22,8 +22,6 @@
 
 <script>
 
-const iconUrl = new URL('../assets/image/icon.png', import.meta.url).h
-
 export default{
     data(){
         return {
