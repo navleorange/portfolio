@@ -14,7 +14,9 @@ export default defineNuxtConfig({
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=DotGothic16&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap' },
     ]
   },
 
@@ -45,7 +47,15 @@ export default defineNuxtConfig({
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/google-fonts'
   ],
+
+  googleFonts: {
+    families: {
+      'DotGothic16': false,
+      'M+PLUS+1': true,
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -1,19 +1,24 @@
+<style lang="css">
+body{
+    /* font-family: "DotGothic16", sans-serif; */
+    font-family: "M PLUS 1", sans-serif;
+}
+</style>
+
 <style lang="scss" scoped>
 
 /* 一旦ここにcssを直接かく(いい方法を模索中) */
 
 #self_introduce{
 
-    p{
-        width: 85%;
-    }
-
     @include mq(full){
-        width: 40%;
+        background-color: aqua;
+        width: 43%;
     }
 
     @include mq(xl){
-        width: 40%;
+        background-color: seagreen;
+        width: 43%;
     }
 
     height: 30%;
