@@ -1,4 +1,4 @@
-<style>
+<style lang="scss" scoped>
 
 /* 一旦ここにcssを直接かく(いい方法を模索中) */
 
@@ -16,6 +16,17 @@
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+#profile_container{
+
+    @include mq-target(tablet){
+        background-color: pink;
+    }
+
+    @include mq-target(pc){
+        background-color: black;
+    }
 }
 
 </style>

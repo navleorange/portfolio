@@ -22,6 +22,16 @@ export default defineNuxtConfig({
   css: [
   ],
 
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "~/assets/scss/_variables.scss";',
+        },
+      },
+    },
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
