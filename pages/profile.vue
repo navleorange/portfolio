@@ -24,7 +24,6 @@ body{
     justify-content: center;
 
     @include mq(sp){
-        background-color: black;
         display: block;
     }
 
@@ -36,7 +35,7 @@ body{
         object-fit: cover;
 
         @include mq(sp){
-            height: 10%;
+            height: 70%;
             margin-bottom: 0px;
         }
 
