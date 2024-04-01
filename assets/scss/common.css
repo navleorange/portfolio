@@ -1,0 +1,12 @@
+body{
+    animation: portfolitbg 20s ease infinite;
+}
+
+@keyframes portfolitbg {
+    0% {background:#8dd98d; opacity: 1;}
+    25% {background:#8dd98d; opacity: 0.75;}
+    50% {background:#8dd98d; opacity: 0.5;}
+    70% {background:#8dd98d; opacity: 0.3;}
+    90% {background:#8dd98d; opacity: 0.1;}
+    100% {background:#8dd98d; opacity: 0;}
+}

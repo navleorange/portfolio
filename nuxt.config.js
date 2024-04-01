@@ -22,6 +22,7 @@ export default defineNuxtConfig({
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "~/assets/scss/common.css"
   ],
 
   vite: {
