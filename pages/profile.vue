@@ -9,41 +9,52 @@ body{
 
 /* 一旦ここにcssを直接かく(いい方法を模索中) */
 
-#self_introduce{
-
-    @include mq(full){
-        background-color: aqua;
-        width: 43%;
-    }
-
-    @include mq(xl){
-        background-color: seagreen;
-        width: 43%;
-    }
-
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#top_page_icon{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 #profile_container{
+    background-color: wheat;
+    width: 100vw;
+    height: 100vh;
+}
 
-    @include mq-target(tablet){
-        background-color: pink;
-    }
+#self_introduce{
+    
+    background-color: aqua;
+    width: auto;
+    height: 50%;
+    display: flex;
+    justify-content: center;
 
-    @include mq-target(pc){
+    @include mq(sp){
         background-color: black;
+        display: block;
     }
+
+    #top_page_icon{
+        width: auto;
+        height: auto;
+        margin: 33px 33px;
+        border-radius: 50%;
+        object-fit: cover;
+
+        @include mq(sp){
+            height: 10%;
+            margin-bottom: 0px;
+        }
+
+    }
+
+    .profile_text{
+        background-color: red;
+        display: grid;
+        place-items: center;
+        width: 30%;
+        margin-top: 30px;
+
+        h2, p{
+            margin: 0px;
+        }
+
+    }
+
 }
 
 </style>
@@ -86,10 +97,9 @@ export default{
             <img id="top_page_icon" src="~/assets/image/icon.png"> 
             <div class="profile_text">
                 <h2> 名前: navleorange</h2>
-                <p>生年月日: {{birthDay.year}}年{{birthDay.month}}月{{birthDay.day}}日生まれ {{age}}歳</p>
+                <p>生年月日: {{birthDay.year}}年{{birthDay.month}}月{{birthDay.day}}日 {{age}}歳</p>
                 <p>出身地: 静岡県</p>
                 <p>サークル: <a href="https://szpp-dev-team.github.io">SZPP</a></p>
-                <p></p>
             </div>
         </div>
 

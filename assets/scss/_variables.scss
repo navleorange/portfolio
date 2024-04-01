@@ -1,20 +1,12 @@
 /* ブレイクポイントの設定 min~max */
 $mq-breakpoints-min: (
- 'xxs': '0px',
- 'xs': '441px',
- 'mobile': '581px',
- 'tablet': '781px',
- 'xl': '1000px',
- 'full': '1450px',
+  'sp': '700px', // iphoneSE
+  'full': '1450px',
 ) !default;
 
 $mq-breakpoints-max: (
- 'xxs': '440px',
- 'xs': '580px',
- 'mobile': '665px',
- 'tablet': '995px',
- 'xl': '1450px',
- 'full': "3000px",
+  'sp': '1300px', //iphone(12~13) ProMax, 14Plus
+  'full': "3000px",
 ) !default;
 
 /* mq-target:指定してメディアクエリのみに適用 */
