@@ -10,16 +10,19 @@ body{
 /* 一旦ここにcssを直接かく(いい方法を模索中) */
 
 #profile_container{
-    background-color: wheat;
+    // background-color: wheat;
     width: 100vw;
     height: 100vh;
 }
 
 #self_introduce{
     
-    background-color: aqua;
+    // background-color: aqua;
     width: auto;
     height: 50%;
+
+    // 自己紹介を見やすい場所に変える
+    margin-top: 3%;
 
     // iconとtextを横並びにする
     display: flex;
@@ -121,6 +124,7 @@ export default{
 
 
 <template>
+    <HeaderMenu />
     <div id="profile_container">
         <div id="self_introduce">
             <img id="top_page_icon" src="~/assets/image/icon.png"> 
