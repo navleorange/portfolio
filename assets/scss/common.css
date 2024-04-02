@@ -1,12 +1,16 @@
 body{
-    animation: portfolitbg 20s ease infinite;
+    animation-name: portfolitbg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 @keyframes portfolitbg {
-    0% {background:#8dd98d; opacity: 1;}
-    25% {background:#8dd98d; opacity: 0.75;}
-    50% {background:#8dd98d; opacity: 0.5;}
-    70% {background:#8dd98d; opacity: 0.3;}
-    90% {background:#8dd98d; opacity: 0.1;}
-    100% {background:#8dd98d; opacity: 0;}
+    /* カラーコードの末尾に2つ追加で透明度 */
+    0% {background:#8dd98dFF;}
+    25% {background:#8dd98dB3;}
+    50% {background:#8dd98d80;}
+    70% {background:#8dd98d4D;}
+    90% {background:#8dd98d1A;}
+    100% {background:#8dd98d00;}
 }
