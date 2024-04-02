@@ -1,4 +1,4 @@
 <template>
     <HeaderMenu />
-    <h1>Works Page</h1>
+    <p>This is Search Page.</p>
 </template>

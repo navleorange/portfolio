@@ -7,8 +7,6 @@ body{
 
 <style lang="scss" scoped>
 
-/* 一旦ここにcssを直接かく(いい方法を模索中) */
-
 #profile_container{
     // background-color: wheat;
     width: 100vw;
@@ -22,7 +20,7 @@ body{
     height: 50%;
 
     // 自己紹介を見やすい場所に変える
-    margin-top: 3%;
+    margin-top: 6%;
 
     // iconとtextを横並びにする
     display: flex;
@@ -62,7 +60,7 @@ body{
 
     .profile_text{
         width: 30%;
-        height: 80%;
+        height: 90%;
 
         // 紹介内容を列挙する前のタイトル
         .profile_title{
