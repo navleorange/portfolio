@@ -7,8 +7,6 @@ body{
 
 @keyframes portfolitbg {
     /* カラーコードの末尾に2つ追加で透明度 */
-    0% {background:#8dd98d4D;}
-    70% {background:#8dd98d4D;}
-    90% {background:#8dd98d1A;}
-    100% {background:#8dd98d00;}
+    0% {background:#8dd98d4D;}      /* opacity: 30% */
+    100% {background:#8dd98d33;}    /* opacity: 20% */
 }
