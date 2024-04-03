@@ -29,6 +29,7 @@ body{
     @include mq(sp){
         // スマホは縦
         display: block;
+        margin-top: 15%;
     }
 
     #top_page_icon{
@@ -62,12 +63,25 @@ body{
         width: 30%;
         height: 90%;
 
+        // 文字中央
+        text-align: center;
+
+        @include mq(sp){
+            width: 80%;
+
+            // textの左右中央揃え
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-top: 20%;
+        }
+
         // 紹介内容を列挙する前のタイトル
         .profile_title{
             font-size: 1.2em;
             background: #5fc2f5;
             padding: 4px;
-            text-align: center;
             color: #FFF;
             font-weight: bold;
             letter-spacing: 0.05em;
