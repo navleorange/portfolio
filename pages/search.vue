@@ -1,4 +1,5 @@
 <template>
-    <HeaderMenu />
-    <UnderConstruction />
+    <div id="search_container">
+        <UnderConstruction />
+    </div>
 </template>

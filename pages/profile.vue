@@ -20,7 +20,7 @@ body{
     height: 50%;
 
     // 自己紹介を見やすい場所に変える
-    margin-top: 6%;
+    margin-top: 8%;
 
     // iconとtextを横並びにする
     display: flex;
@@ -122,7 +122,6 @@ export default{
 
 
 <template>
-    <HeaderMenu />
     <div id="profile_container">
         <div id="self_introduce">
             <img id="top_page_icon" src="~/assets/image/icon.png"> 

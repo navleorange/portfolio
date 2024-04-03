@@ -49,7 +49,7 @@
 
 </style>
 
-<script lang="ts">
+<script lang="ts" scoped>
 
 let gifInfo = [
                 { path: '/assets/gif/mogura.gif', copyright:"TELOPICT.com", isImported: false},

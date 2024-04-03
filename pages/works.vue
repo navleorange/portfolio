@@ -1,4 +1,3 @@
 <template>
-    <HeaderMenu />
     <UnderConstruction />
 </template>
