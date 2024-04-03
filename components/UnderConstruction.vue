@@ -14,9 +14,20 @@
         text-align: center;
         font-size: 32px;
 
+        @include mq(sp){
+            font-size: 20px;
+        }
+
         img{
             max-width: 780px;
-            max-height: 500px; 
+            max-height: 500px;
+
+            @include mq(sp){
+                // スマホのみ表示
+                max-width: 80%;
+                max-height: 80%;
+            }
+
         }
 
     }
