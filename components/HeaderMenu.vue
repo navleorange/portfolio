@@ -22,7 +22,7 @@ body{
         opacity: 1;
     }
 
-    .hamburger_menu{
+    .hamburger_menu_button{
         display: none;
 
         @include mq(sp){
