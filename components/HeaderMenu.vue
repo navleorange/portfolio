@@ -75,7 +75,7 @@ body{
 
 </style>
 
-<script>
+<script scoped>
     export default {
         data() {
             return {
