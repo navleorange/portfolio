@@ -1,4 +1,4 @@
 <template>
     <HeaderMenu />
-    <p>This is Search Page.</p>
+    <UnderConstruction />
 </template>
