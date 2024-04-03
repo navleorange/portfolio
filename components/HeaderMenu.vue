@@ -46,12 +46,15 @@ body{
                 // 上下, 左右
                 padding: 0.75em 1.25em;
 
+                font-size: 18px;
+
                 // 文字の枠
-                -webkit-text-stroke-width: 0.25px;
-                -webkit-text-stroke-color: white;
+                -webkit-text-stroke-width: 0.375px;
+                -webkit-text-stroke-color: #C0C6C9;
 
                 // 文字色
-                color: #C0C6C9;
+                // color: #C0C6C9;
+                color: white;
 
                 // 下線消し
                 text-decoration: none;
