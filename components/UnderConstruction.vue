@@ -116,7 +116,7 @@ export default {
             <img :src="gifUrl" />
             <p class="credit_text">&copy; {{copyRightString}}</p>
             <p class>
-                現在製作中です
+                現在製作中
                 <span>.</span>
                 <span>.</span>
                 <span>.</span>
