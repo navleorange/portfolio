@@ -70,11 +70,28 @@ body{
             width: 30px;
             height: 5px;
             background: #019ac6;
-        }
-        @for $spanIndex from 1 through 3{
-            span:nth-of-type(#{$spanIndex}){
-                top: 10px + 8px*$spanIndex;
+
+            @for $spanIndex from 1 through 3{
+                &:nth-of-type(#{$spanIndex}){
+                    top: 10px + 8px*$spanIndex;
+
+                    &.transform{
+                        
+                        @if $spanIndex == 1{
+                            top: 20px;
+                            transform: rotate(45deg);
+                        }
+                        @else if $spanIndex == 2{
+                            display: none;
+                        }
+                        @else{
+                            top: 20px;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
             }
+
         }
 
     }
@@ -100,6 +117,7 @@ body{
                 // 表示と縦指定
                 display: flex;
                 flex-flow: column;
+                align-content: center;
             }
 
         }
@@ -110,9 +128,14 @@ body{
                 // ハンバーガーメニューを表示する時のcss
                 &.hamburger_menu_active{
                     // 子要素を中央揃え
-                    margin-right: auto;
-                    margin-left: auto;
-                    margin-bottom: 1.5rem;
+                    margin-bottom: 1.75rem;
+
+                    // テキストを中央揃え
+                    text-align: center;
+
+                    // hoverで指定している行動の禁止
+                    box-shadow: none;
+                    transform: none;
                 }
             }
 
@@ -179,7 +202,7 @@ body{
             <!-- スマホ用のハンバーガーメニュー -->
             <div @click="hamburgerMenuClickEvent" class="hamburger_menu_button">
                 <!-- ハンバーガーメニューの線 -->
-                <span></span><span></span><span></span>
+                <span v-bind:class="{'transform': isHamburgerMenuOpen}"></span><span v-bind:class="{'transform': isHamburgerMenuOpen}"></span><span v-bind:class="{'transform': isHamburgerMenuOpen}"></span>
             </div>
 
             <ul v-bind:class="{'appear': isHamburgerMenuOpen}">
@@ -187,7 +210,7 @@ body{
                     <div v-if="link.isInternalLink" v-bind:class="{'hamburger_menu_active': isHamburgerMenuOpen}" class="internal_link">
                         <NuxtLink :to="link.path" class="link_text">{{ link.label }}</NuxtLink>
                     </div>
-                    <div v-else class="external_link">
+                    <div v-else v-bind:class="{'hamburger_menu_active': isHamburgerMenuOpen}" class="external_link">
                         <a :href="link.path" class="link_text">{{ link.label }}</a>
                     </div>
                 </li>
