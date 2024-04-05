@@ -1,1 +1,0 @@
-import{_ as o}from"./7oQDFvvK.js";import{_ as c,c as n,b as t,o as r}from"./DyXgRER8.js";const _={},s={id:"search_container"};function a(i,d){const e=o;return r(),n("div",s,[t(e)])}const p=c(_,[["render",a]]);export{p as default};
