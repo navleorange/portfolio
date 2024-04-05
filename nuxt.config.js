@@ -5,8 +5,8 @@ export default defineNuxtConfig({
 
   app:{
     baseURL: 'portfolio',
+    buildAssetsDir: 'assets',
   },
-
   head: {
     title: 'portfolio',
     htmlAttrs: {
