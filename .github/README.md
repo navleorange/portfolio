@@ -1,5 +1,8 @@
 # portfolio-nuxt
 
+# Page
+https://navleorange.github.io/profile
+
 ## Build Setup
 
 ```bash
