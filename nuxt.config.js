@@ -7,8 +7,8 @@ export default defineNuxtConfig({
   target: "static",
 
   app:{
-    // baseURL: 'portfolio',
-    buildAssetsDir: 'assets',
+    baseURL: '',
+    // buildAssetsDir: 'assets',
   },
   
   head: {
