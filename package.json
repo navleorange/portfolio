@@ -7,7 +7,8 @@
     "test": "cross-env HOST=0.0.0.0 PORT=3000 nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@nuxt/devtools": "latest",
@@ -15,6 +16,7 @@
     "@types/node": "20.12.2",
     "core-js": "^3.25.3",
     "cross-env": "^7.0.3",
+    "gh-pages": "^6.1.1",
     "nuxt": "^3.11.1",
     "sass": "^1.72.0",
     "vue-server-renderer": "^2.7.10",
