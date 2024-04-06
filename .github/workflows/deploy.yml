@@ -25,10 +25,10 @@ jobs:
         run: yarn generate
       
       - name: check dir
-        run: ls -la /home/runner/work/_temp/
+        run: ls -la ./dist
 
       - name: upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
   
