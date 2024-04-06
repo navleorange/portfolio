@@ -23,6 +23,9 @@ jobs:
 
       - name: generate nuxt
         run: yarn generate
+
+      - name: upload artifact
+        run: actions/upload-pages-artifact@v3
   
   deploy:
     needs: build
