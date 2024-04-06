@@ -23,9 +23,6 @@ jobs:
 
       - name: generate nuxt
         run: yarn generate
-      
-      - name: check dir
-        run: ls -la .output/public
 
       - name: upload artifact
         uses: actions/upload-pages-artifact@v3
