@@ -1,0 +1,40 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+      uses: actions/checkout@v4
+
+      - name: set up node and yarn
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: 'package.json'
+        cache: yarn
+      
+      - name: setup yarn
+      run: yarn install --immutable
+
+      - name: generate nuxt
+      run: yarn generate
+  
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    
+    steps:
+      - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@3
