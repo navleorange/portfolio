@@ -28,7 +28,7 @@ jobs:
         run: ls -la
 
       - name: upload artifact
-        run: actions/upload-pages-artifact@v3
+        run: actions/upload-pages-artifact@v4
   
   deploy:
     needs: build
