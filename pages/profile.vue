@@ -147,8 +147,8 @@ export default{
                 <p>サークル: <a href="https://szpp-dev-team.github.io">SZPP</a></p>
             </div>
         </div>
-
         
+                
 
     </div>
 </template>
