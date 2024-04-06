@@ -25,12 +25,12 @@ jobs:
         run: yarn generate
       
       - name: check dir
-        run: ls -la .output
+        run: ls -la .output/public
 
       - name: upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .output
+          path: .output:public
   
   deploy:
     needs: build
