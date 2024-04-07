@@ -8,14 +8,14 @@ body{
 <style lang="scss" scoped>
 
 #profile_container{
-    // background-color: wheat;
+    background-color: wheat;
     width: 100vw;
     height: 100vh;
 }
 
 #self_introduce{
     
-    // background-color: aqua;
+    background-color: aqua;
     width: auto;
     height: 50%;
 
@@ -29,19 +29,20 @@ body{
     @include mq(sp){
         // スマホは縦
         display: block;
+
+        // 自己紹介のサイズの調整
+        height: 90%;
         margin-top: 15%;
     }
 
     #top_page_icon{
-        width: auto;
-        height: auto;
 
         // iconを円にする
         border-radius: 50%;
         object-fit: cover;
 
         @include mq(sp){
-            // iconのサイズ
+            // iconのサイズ (縦だと次の要素とぶつかるので横で指定)
             width: 75%;
 
             // 画像の左右中央揃え
@@ -51,30 +52,28 @@ body{
 
             // self_introduceの上から少し離す
             position: relative;
-            top: 10%;
-
-            // self_introduceのブロックを画面上部から離さないようにする
-            margin-top: 0%;
+            top: 5%;
         }
 
     }
 
     .profile_text{
         width: 30%;
-        height: 90%;
+        height: auto;
 
         // 文字中央
         text-align: center;
 
         @include mq(sp){
-            width: 80%;
+            width: 85%;
+            height: auto;
 
             // textの左右中央揃え
             display: block;
             margin-left: auto;
             margin-right: auto;
 
-            margin-top: 20%;
+            margin-top: 15%;
         }
 
         // 紹介内容を列挙する前のタイトル
@@ -97,6 +96,20 @@ body{
         display: grid;
         place-items: center;
 
+    }
+
+}
+
+#my_skills{
+    // 自己紹介より少し離す
+    margin-top: 8%;
+
+    // h*を左右中央揃え
+    text-align: center;
+
+    table{
+        // 左中中央揃え
+        margin: auto;
     }
 
 }
@@ -147,8 +160,17 @@ export default{
                 <p>サークル: <a href="https://szpp-dev-team.github.io">SZPP</a></p>
             </div>
         </div>
-        
-                
+
+        <div id="my_skills">
+            <h2>スキル</h2>
+            <table>
+                <thread>
+                    <tr><th>制作物・用途</th><th>使用したフレームワークや言語など</th></tr>
+                    <tr><td>研究</td><td>Python, Java</td></tr>
+                    <tr><td>このサイト</td><td>Nuxt3, Vue.js</td></tr>
+                </thread>
+            </table>
+        </div>
 
     </div>
 </template>
