@@ -14,7 +14,7 @@ body{
 }
 
 #self_introduce{
-    background-color: aqua;
+    // background-color: aqua;
     width: auto;
     height: 50%;
 
@@ -117,16 +117,26 @@ body{
         margin-left: auto;
     }
 
-    table{
-        // 左中中央揃え
-        margin: auto;
+    h2{
+        margin: 0;
+    }
 
-        // th, tdの間隔を設定
+    table{
+        // 左右中央揃え
+        margin-left: auto;
+        margin-right: auto;
+
+        // h2に近付ける
+        margin-top: -2%;
+
+        // th, tdの間隔を設定   表の左右・上下
         border-collapse: separate;
-        border-spacing: 2rem;
+        border-spacing: 5.5rem 2rem;
 
         @include mq(sp){
-            font-size: 13px;
+            font-size: 12px;
+            margin-top: -8%;
+            border-spacing: 0.5rem 2rem;
         }
 
         th td{
