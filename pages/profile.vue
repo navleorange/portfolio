@@ -101,7 +101,7 @@ body{
 
 #my_skills{
     // 自己紹介より少し離す
-    margin-top: 5%;
+    margin-top: 6%;
     height: 80%;
     // background-color: red;
 
@@ -125,26 +125,26 @@ body{
         // 左右中央揃え
         margin-left: auto;
         margin-right: auto;
+        width: 80%;
 
         // h2に近付ける
         margin-top: -2%;
 
         // th, tdの間隔を設定   表の左右・上下
-        border-collapse: separate;
-        border-spacing: 5.5rem 2rem;
+        border-collapse: collapse;
+        // border-spacing: 5.5rem 2rem;
 
         @include mq(sp){
             font-size: 12px;
             margin-top: -8%;
-            border-spacing: 0.5rem 2rem;
         }
 
-        th td{
+        tr{
+            background-color: #f1f1f1;
 
-            @include mq(sp){
-                margin: 1.5rem;
+            th td{
+                background-color: red;
             }
-
         }
 
     }
@@ -199,7 +199,7 @@ export default{
         </div>
 
         <div id="my_skills">
-            <h2>スキル</h2>
+            <h2>Works</h2>
             <table>
                 <thread>
                     <tr><th>制作物・用途</th><th>使用したフレームワークや言語など</th><th>詳細</th></tr>
