@@ -8,13 +8,12 @@ body{
 <style lang="scss" scoped>
 
 #profile_container{
-    background-color: wheat;
+    // background-color: wheat;
     width: 100vw;
     height: 100vh;
 }
 
 #self_introduce{
-    
     background-color: aqua;
     width: auto;
     height: 50%;
@@ -31,7 +30,7 @@ body{
         display: block;
 
         // 自己紹介のサイズの調整
-        height: 90%;
+        height: 95%;
         margin-top: 15%;
     }
 
@@ -66,14 +65,14 @@ body{
 
         @include mq(sp){
             width: 85%;
-            height: auto;
+            height: 40%;
 
             // textの左右中央揃え
             display: block;
             margin-left: auto;
             margin-right: auto;
 
-            margin-top: 15%;
+            margin-top: 13%;
         }
 
         // 紹介内容を列挙する前のタイトル
@@ -102,14 +101,42 @@ body{
 
 #my_skills{
     // 自己紹介より少し離す
-    margin-top: 8%;
+    margin-top: 5%;
+    height: 80%;
+    // background-color: red;
 
     // h*を左右中央揃え
     text-align: center;
 
+    @include mq(sp){
+        // skillsのサイズ
+        width: 90%;
+
+        // 左中中央揃え
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     table{
         // 左中中央揃え
         margin: auto;
+
+        // th, tdの間隔を設定
+        border-collapse: separate;
+        border-spacing: 2rem;
+
+        @include mq(sp){
+            font-size: 13px;
+        }
+
+        th td{
+
+            @include mq(sp){
+                margin: 1.5rem;
+            }
+
+        }
+
     }
 
 }
@@ -165,9 +192,9 @@ export default{
             <h2>スキル</h2>
             <table>
                 <thread>
-                    <tr><th>制作物・用途</th><th>使用したフレームワークや言語など</th></tr>
-                    <tr><td>研究</td><td>Python, Java</td></tr>
-                    <tr><td>このサイト</td><td>Nuxt3, Vue.js</td></tr>
+                    <tr><th>制作物・用途</th><th>使用したフレームワークや言語など</th><th>詳細</th></tr>
+                    <tr><th>研究</th><td>Python, Java</td><td>Hoge</td></tr>
+                    <tr><th>このサイト</th><td>Nuxt3, Vue.js</td><td>Fuga</td></tr>
                 </thread>
             </table>
         </div>
