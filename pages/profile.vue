@@ -110,7 +110,7 @@ body{
 
     @include mq(sp){
         // skillsのサイズ
-        width: 90%;
+        width: auto;
 
         // 左中中央揃え
         margin-right: auto;
