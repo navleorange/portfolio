@@ -264,7 +264,7 @@ export default{
                     <tr><th>アルバイト</th><td>Laravel, PHP, MySQL</td><td></td></tr>
                     <tr><th>競技プログラミング</th><td>C++</td><td><a href="https://atcoder.jp/users/navleorange">AtCoderリンク</a></td></tr>
                     <tr><th>このポートフォリオ</th><td>Nuxt3, Vue.js, GitHub Actions</td><td><NuxtLink to='/works'>制作物へ</NuxtLink></td></tr>
-                    <tr><th>その他制作物</th><td>Python, Go</td><td><NuxtLink to='/works'>制作物へ</NuxtLink></td></tr>
+                    <tr><th>その他制作物</th><td>Python, Goなど</td><td><NuxtLink to='/works'>制作物へ</NuxtLink></td></tr>
                 </tbody>
             </table>
         </div>
