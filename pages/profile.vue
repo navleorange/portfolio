@@ -63,6 +63,16 @@ body{
         // 文字中央
         text-align: center;
 
+        // 枠線
+        margin: 2em 0;
+        margin-left: 3%;
+        background: #f1f1f1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+
+        // text内の要素を左右中央揃え
+        display: grid;
+        place-items: center;
+
         @include mq(sp){
             width: 85%;
             height: 40%;
@@ -85,15 +95,16 @@ body{
             letter-spacing: 0.05em;
         }
 
-        // 枠線
-        margin: 2em 0;
-        margin-left: 3%;
-        background: #f1f1f1;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+        .account{
+            img{
+                // iconを円にする
+                border-radius: 50%;
+                object-fit: cover;
 
-        // text内の要素を左右中央揃え
-        display: grid;
-        place-items: center;
+                // サイズ
+                width: 15%;
+            }
+        }
 
     }
 
@@ -201,7 +212,10 @@ export default{
             <img id="top_page_icon" src="~/assets/image/icon.png"> 
             <div class="profile_text">
                 <div class="profile_title">簡単な自己紹介</div>
-                <h2> アカウント: navleorange</h2>
+                <div class="account">
+                    <h2> アカウント: navleorange</h2>
+                    <img src="~/assets/image/github-mark-white.png">
+                </div>
                 <p>生年月日: {{birthDay.year}}年{{birthDay.month}}月{{birthDay.day}}日 {{age}}歳</p>
                 <p>出身地: 静岡県</p>
                 <p>サークル: <a href="https://szpp-dev-team.github.io">SZPP</a></p>
