@@ -96,14 +96,36 @@ body{
         }
 
         .account{
-            img{
-                // iconを円にする
-                border-radius: 50%;
-                object-fit: cover;
 
-                // サイズ
-                width: 15%;
+            .account_link{
+                // 外部のアカウントへのリンクの右寄せ
+                text-align: right;
+
+                img{
+                    // iconを円にする
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                    // サイズ
+                    width: 10%;
+
+                    @include mq(sp){
+                        margin-top: 3%;
+                        margin-right: 10%;
+                    }
+
+                }
             }
+
+            h2{
+                margin-top: 0;
+
+                @include mq(sp){
+                    margin-top: -3%;
+                }
+
+            }
+            
         }
 
     }
@@ -213,8 +235,12 @@ export default{
             <div class="profile_text">
                 <div class="profile_title">簡単な自己紹介</div>
                 <div class="account">
+                    <div class="account_link">
+                        <a href="https://github.com/navleorange">
+                        <img src="~/assets/image/github-mark.png">
+                    </a>
+                    </div>
                     <h2> アカウント: navleorange</h2>
-                    <img src="~/assets/image/github-mark.png">
                 </div>
                 <p>生年月日: {{birthDay.year}}年{{birthDay.month}}月{{birthDay.day}}日 {{age}}歳</p>
                 <p>出身地: 静岡県</p>
