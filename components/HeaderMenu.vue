@@ -31,10 +31,16 @@ body{
         align-items: flex-end;
 
         // メニューを右に出す
-        width: 35%;
+        width: 33%;
         right: 0;
 
         opacity: 0.5;
+
+        // 境界をわかりやすくするために線をつける
+        border-left: 0.5px solid gray;
+
+        // 影を左側に少しつける
+        box-shadow: -0.1rem -1rem 1rem black;
 
         z-index: 100;
     }
@@ -46,6 +52,27 @@ body{
             opacity: 0.9;
         }
 
+    }
+
+    #sp_hamburger_menu_header{
+        display: none;
+
+        @include mq(sp){
+            &.hamburger_menu_active{
+                display: block;
+
+                width: 100vw;
+                height: 60px;
+
+                // 親要素の値を明示的に継承
+                background-color: inherit;
+                opacity: 0.6;
+
+                // 上固定
+                position: inherit;
+                top: inherit;
+            }
+        }
     }
 
     .hamburger_menu_button{
@@ -198,6 +225,9 @@ body{
 <template>
     <header>
         <nav v-bind:class="{'hamburger_menu_active': isHamburgerMenuOpen}" class="header-nav">
+
+            <!-- spでメニュー表示時にヘッダーになり変わるもの -->
+            <div id="sp_hamburger_menu_header" v-bind:class="{'hamburger_menu_active': isHamburgerMenuOpen}"></div>
 
             <!-- スマホ用のハンバーガーメニュー -->
             <div @click="hamburgerMenuClickEvent" class="hamburger_menu_button">
