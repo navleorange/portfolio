@@ -121,7 +121,10 @@ body{
         // 左右中央揃え
         margin-left: auto;
         margin-right: auto;
+
+        table-layout: fixed;
         width: 80%;
+        height: 50%;
 
         // th, tdの間隔を設定   表の左右・上下
         border-collapse: collapse;
@@ -135,6 +138,7 @@ body{
             background-color: #f1f1f1;
 
             th td{
+                width: 33%;
                 background-color: red;
             }
         }
@@ -193,11 +197,11 @@ export default{
         <div id="my_skills">
             <h2>Works</h2>
             <table>
-                <thread>
+                <tbody>
                     <tr><th>制作物・用途</th><th>使用したフレームワークや言語など</th><th>詳細</th></tr>
                     <tr><th>研究</th><td>Python, Java</td><td>Hoge</td></tr>
                     <tr><th>このサイト</th><td>Nuxt3, Vue.js</td><td>Fuga</td></tr>
-                </thread>
+                </tbody>
             </table>
         </div>
 
