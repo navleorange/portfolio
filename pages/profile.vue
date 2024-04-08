@@ -123,23 +123,37 @@ body{
         margin-right: auto;
 
         table-layout: fixed;
-        width: 80%;
-        height: 50%;
+        width: 75%;
+        height: 30%;
 
-        // th, tdの間隔を設定   表の左右・上下
+        // th, tdの間隔を設定
         border-collapse: collapse;
-        // border-spacing: 5.5rem 2rem;
+
+        background-color: aliceblue;
 
         @include mq(sp){
-            font-size: 12px;
+            font-size: 13px;
+            height: 40%;
         }
 
-        tr{
-            background-color: #f1f1f1;
+        thead{
+            background-color: yellowgreen;
+            opacity: 0.7;
+            border-bottom: 1px solid gray;
+        }
 
-            th td{
-                width: 33%;
-                background-color: red;
+        tbody{
+            tr{
+                border-bottom: 1px solid gray;
+
+                &:hover{
+                    background-color: wheat;
+                    opacity: 0.7;
+                }
+
+                th td{
+                    background-color: red;
+                }
             }
         }
 
@@ -197,10 +211,12 @@ export default{
         <div id="my_skills">
             <h2>Works</h2>
             <table>
-                <tbody>
+                <thead>
                     <tr><th>制作物・用途</th><th>使用したフレームワークや言語など</th><th>詳細</th></tr>
-                    <tr><th>研究</th><td>Python, Java</td><td>Hoge</td></tr>
-                    <tr><th>このサイト</th><td>Nuxt3, Vue.js</td><td>Fuga</td></tr>
+                </thead>
+                <tbody>
+                    <tr><th>研究</th><td>Python, Java</td><td><NuxtLink to='/search'>研究内容へ</NuxtLink></td></tr>
+                    <tr><th>このサイト</th><td>Nuxt3, Vue.js</td><td><NuxtLink to='/works'>制作物へ</NuxtLink></td></tr>
                 </tbody>
             </table>
         </div>
