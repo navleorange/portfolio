@@ -117,18 +117,11 @@ body{
         margin-left: auto;
     }
 
-    h2{
-        margin: 0;
-    }
-
     table{
         // 左右中央揃え
         margin-left: auto;
         margin-right: auto;
         width: 80%;
-
-        // h2に近付ける
-        margin-top: -2%;
 
         // th, tdの間隔を設定   表の左右・上下
         border-collapse: collapse;
@@ -136,7 +129,6 @@ body{
 
         @include mq(sp){
             font-size: 12px;
-            margin-top: -8%;
         }
 
         tr{
