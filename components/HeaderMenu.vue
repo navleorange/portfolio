@@ -42,6 +42,9 @@ body{
         // 影を左側に少しつける
         box-shadow: -0.1rem -1rem 1rem black;
 
+        // 変化に時間をつける
+        // transition-duration: 2s;
+
         z-index: 100;
     }
 
@@ -96,7 +99,7 @@ body{
             display: block;
             width: 30px;
             height: 5px;
-            background: #019ac6;
+            background:darkcyan;
 
             @for $spanIndex from 1 through 3{
                 &:nth-of-type(#{$spanIndex}){
@@ -107,6 +110,9 @@ body{
                         @if $spanIndex == 1{
                             top: 20px;
                             transform: rotate(45deg);
+
+                            // 変化に時間をつける
+                            transition-duration: 0.5s;
                         }
                         @else if $spanIndex == 2{
                             display: none;
@@ -114,6 +120,9 @@ body{
                         @else{
                             top: 20px;
                             transform: rotate(-45deg);
+
+                            // 変化に時間をつける
+                            transition-duration: 1s;
                         }
                     }
                 }
