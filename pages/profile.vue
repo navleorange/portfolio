@@ -214,7 +214,7 @@ export default{
                 <div class="profile_title">簡単な自己紹介</div>
                 <div class="account">
                     <h2> アカウント: navleorange</h2>
-                    <img src="~/assets/image/github-mark-white.png">
+                    <img src="~/assets/image/github-mark.png">
                 </div>
                 <p>生年月日: {{birthDay.year}}年{{birthDay.month}}月{{birthDay.day}}日 {{age}}歳</p>
                 <p>出身地: 静岡県</p>
