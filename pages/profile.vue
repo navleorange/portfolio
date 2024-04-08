@@ -87,12 +87,17 @@ body{
 
         // 紹介内容を列挙する前のタイトル
         .profile_title{
-            font-size: 1.2em;
+            font-size: 1.1em;
             background: #5fc2f5;
             padding: 4px;
-            color: #FFF;
-            font-weight: bold;
+            color:#F7FCFE;
             letter-spacing: 0.05em;
+
+            // 縁取り
+            text-shadow: 1px 1px 0 gray, -1px -1px 0 gray,
+            -1px 1px 0 gray,  1px -1px 0 gray,
+            1px 0 0 gray, -1px  0 0 gray,
+            0 1px 0 gray,  0 -1px 0 gray;
         }
 
         .account{
@@ -256,7 +261,10 @@ export default{
                 </thead>
                 <tbody>
                     <tr><th>研究</th><td>Python, Java</td><td><NuxtLink to='/search'>研究内容へ</NuxtLink></td></tr>
-                    <tr><th>このサイト</th><td>Nuxt3, Vue.js</td><td><NuxtLink to='/works'>制作物へ</NuxtLink></td></tr>
+                    <tr><th>アルバイト</th><td>Laravel, PHP, MySQL</td><td></td></tr>
+                    <tr><th>競技プログラミング</th><td>C++</td><td><a href="https://atcoder.jp/users/navleorange">AtCoderリンク</a></td></tr>
+                    <tr><th>このポートフォリオ</th><td>Nuxt3, Vue.js, GitHub Actions</td><td><NuxtLink to='/works'>制作物へ</NuxtLink></td></tr>
+                    <tr><th>その他制作物</th><td>Python, Go</td><td><NuxtLink to='/works'>制作物へ</NuxtLink></td></tr>
                 </tbody>
             </table>
         </div>
