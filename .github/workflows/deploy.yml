@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
+  schedule:
+    - cron: '0 16 * * *' # 毎日 01:00に実行
 
 jobs:
   build:
