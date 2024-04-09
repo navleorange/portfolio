@@ -8,12 +8,10 @@
 
 </style>
 
-<script lang="ts" scoped>
-
-</script>
-
 <template>
     <div id="search_container">
-        <ContentDoc path="/search/test" />
+        <ContentDoc path="/search/test" v-slot="{ doc }">
+            <ContentRenderer :value="doc" />
+        </ContentDoc>
     </div>
 </template>
