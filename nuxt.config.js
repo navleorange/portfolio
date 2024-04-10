@@ -29,6 +29,19 @@ export default defineNuxtConfig({
     ]
   },
 
+  content:{
+    markdown:{
+      // MarkDownのhタグのリンクをつけない
+      anchorLinks: false,
+      remarkPlugins:{
+        'remark-emoji':{
+          emoticon: true
+        },
+        'remark-gfm': false,
+      }
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "~/assets/scss/common.css"
