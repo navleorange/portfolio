@@ -10,6 +10,7 @@ body{
     width: 100vw;
     background-color: yellowgreen;
     opacity: 0.9;
+    z-index: 100;
 
     // 上固定
     position: fixed;
