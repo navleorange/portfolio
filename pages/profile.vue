@@ -260,7 +260,7 @@ export default{
                     <tr><th>制作物・用途</th><th>使用したフレームワークや言語など</th><th>詳細</th></tr>
                 </thead>
                 <tbody>
-                    <tr><th>研究</th><td>Python, Java</td><td><NuxtLink to='/search'>研究内容へ</NuxtLink></td></tr>
+                    <tr><th>研究</th><td>Python, Java</td><td><NuxtLink to='/research'>研究内容へ</NuxtLink></td></tr>
                     <tr><th>アルバイト</th><td>Laravel, PHP, MySQL</td><td></td></tr>
                     <tr><th>競技プログラミング</th><td>C++</td><td><a href="https://atcoder.jp/users/navleorange">AtCoderリンク</a></td></tr>
                     <tr><th>このポートフォリオ</th><td>Nuxt3, Vue.js, GitHub Actions</td><td><NuxtLink to='/works'>制作物へ</NuxtLink></td></tr>

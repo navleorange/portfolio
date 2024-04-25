@@ -218,7 +218,7 @@ body{
                 isHamburgerMenuOpen: false,
                 links: [
                     { label:"Top", isInternalLink: true , path: '/profile'},
-                    { label:"研究内容", isInternalLink: true , path: '/search'},
+                    { label:"研究内容", isInternalLink: true , path: '/research'},
                     { label:"制作物", isInternalLink: true , path: '/works'},
                 ]
             }
