@@ -13,7 +13,7 @@
 
     :deep(h2), :deep(h3), :deep(h4){
         // border-left: 0.125rem solid gray;
-        border-bottom: 0.25rem solid gray;
+        border-bottom: 0.25rem solid #C0C6C9CC;
     }
 
 }
