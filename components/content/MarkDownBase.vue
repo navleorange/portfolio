@@ -13,7 +13,21 @@
 
     :deep(h2), :deep(h3), :deep(h4){
         // border-left: 0.125rem solid gray;
-        border-bottom: 0.25rem solid #C0C6C9CC;
+        position: relative;
+
+        // 下線の代わり(長さを調節するため)
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0%;
+            bottom: -8px;
+            width: 45%;
+            height: 3px;
+            background-color: #C0C6C9CC;
+            border-radius: 20px;
+        }
+
     }
 
 }
