@@ -27,13 +27,18 @@
             display: block;
             position: absolute;
             left: 0%;
-            bottom: -8px;
-            width: 45%;
-            height: 3px;
+            bottom: -5px;
+            width: 50%;
+            height: 0.125rem;
             background-color: #C0C6C9CC;
             border-radius: 20px;
         }
 
+    }
+
+    :deep(blockquote){
+        border-left: 0.2rem solid #C0C6C9CC;
+        padding-left: 10px;
     }
 
 }
