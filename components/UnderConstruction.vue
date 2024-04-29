@@ -69,6 +69,7 @@ let gifInfo = [
                 { path: '/assets/gif/loading-hiyoko.gif', copyright:"ぴよたそ", isImported: false},
                 { path: '/assets/gif/pasokon-hiyoko.gif', copyright:"ぴよたそ", isImported: false},
                 { path: '/assets/gif/pasokon-hiyoko.gif', copyright:"ぴよたそ", isImported: false},
+                { path: '/assets/gif/nanimoshitenai.gif', copyright:"ぴよたそ", isImported: false},
                 { path: '/assets/gif/notePC_hito.gif', copyright:"フリイラくん", isImported: false},
                 { path: '/assets/gif/frog_apologize.gif', copyright:"素材Good", isImported: false},
             ];
