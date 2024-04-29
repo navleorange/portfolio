@@ -64,12 +64,13 @@
 <script lang="ts" scoped>
 
 let gifInfo = [
-                { path: '/assets/gif/mogura.gif', copyright:"TELOPICT.com", isImported: false},
-                { path: '/assets/gif/pc_hand.gif', copyright:"TELOPICT.com", isImported: false},
+                // { path: '/assets/gif/mogura.gif', copyright:"TELOPICT.com", isImported: false},
+                // { path: '/assets/gif/pc_hand.gif', copyright:"TELOPICT.com", isImported: false},
                 { path: '/assets/gif/loading-hiyoko.gif', copyright:"ぴよたそ", isImported: false},
                 { path: '/assets/gif/pasokon-hiyoko.gif', copyright:"ぴよたそ", isImported: false},
                 { path: '/assets/gif/pasokon-hiyoko.gif', copyright:"ぴよたそ", isImported: false},
                 { path: '/assets/gif/notePC_hito.gif', copyright:"フリイラくん", isImported: false},
+                { path: '/assets/gif/frog_apologize.gif', copyright:"素材Good", isImported: false},
             ];
 
 export default {
