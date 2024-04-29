@@ -12,9 +12,14 @@
     padding: 1% 3%;
 
     :deep(h1){
+        margin-bottom: 5px;
         &::before{
             content: "・";
         }
+    }
+
+    :deep(h2){
+        margin-top: 35px;
     }
 
     :deep(h2), :deep(h3), :deep(h4){
