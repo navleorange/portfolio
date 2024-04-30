@@ -1,7 +1,7 @@
 # portfolio-nuxt
 
-# Page
-https://navleorange.github.io/profile
+# GitHub Pages
+https://navleorange.github.io
 
 ## Build Setup
 
