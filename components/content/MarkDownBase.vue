@@ -38,7 +38,7 @@
         background-color: #8dd98d33;
         border-left: solid 5px yellowgreen;
         border-bottom: solid 2px #d7d7d7;/*下線*/
-
+        padding-left: 7px;
     }
 
     :deep(h3), :deep(h4){
