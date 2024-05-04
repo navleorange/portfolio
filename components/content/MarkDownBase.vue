@@ -31,7 +31,7 @@
     :deep(h2), :deep(h3), :deep(h4){
         // border-left: 0.125rem solid gray;
         position: relative;
-
+        height: 2.5rem;
         display: flex;
         width: 50%;
         align-items: center;
@@ -42,6 +42,7 @@
     }
 
     :deep(h3), :deep(h4){
+        height: 2rem;
         width: 35%;
     }
 
