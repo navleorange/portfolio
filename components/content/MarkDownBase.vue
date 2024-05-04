@@ -12,10 +12,16 @@
     padding: 1% 3%;
 
     :deep(h1){
-        margin-bottom: 5px;
-        &::before{
-            content: "・";
-        }
+        // border-top: solid 3px yellowgreen;
+        // border-bottom: solid 3px yellowgreen;
+        // margin-bottom: 5px;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+        background-color: #8dd98d33;
+        border-left: solid 5px yellowgreen;
+        border-bottom: solid 3px #d7d7d7;/*下線*/
+        padding-left: 7px;
     }
 
     :deep(h2){
