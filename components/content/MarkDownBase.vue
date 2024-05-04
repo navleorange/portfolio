@@ -32,19 +32,17 @@
         // border-left: 0.125rem solid gray;
         position: relative;
 
-        // 下線の代わり(長さを調節するため)
-        &::after{
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0%;
-            bottom: -5px;
-            width: 50%;
-            height: 0.125rem;
-            background-color: #C0C6C9CC;
-            border-radius: 20px;
-        }
+        display: flex;
+        width: 50%;
+        align-items: center;
+        background-color: #8dd98d33;
+        border-left: solid 5px yellowgreen;
+        border-bottom: solid 2px #d7d7d7;/*下線*/
 
+    }
+
+    :deep(h3), :deep(h4){
+        width: 35%;
     }
 
     :deep(blockquote){
