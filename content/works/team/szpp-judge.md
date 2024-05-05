@@ -4,3 +4,6 @@ description: サークル活動の一環で行われたAtCoderのようなジャ
 lang: Go
 GitHub: https://github.com/szpp-dev-team/szpp-judge
 ---
+
+::MarkDownUnderConstruction
+::

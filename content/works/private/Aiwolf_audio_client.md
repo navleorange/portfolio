@@ -4,3 +4,6 @@ description: 人間が生成AIと対戦するシステムの人間用のアプ�
 lang: Python3
 GitHub: https://github.com/navleorange/Aiwolf_audio_client
 ---
+
+::MarkDownUnderConstruction
+::
