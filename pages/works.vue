@@ -133,6 +133,7 @@ queryContent("works").find())
                                 <tr><th>言語</th><td>{{team_content.lang}}</td></tr>
                                 <tr><th>概要</th><td>{{team_content.description}}</td></tr>
                                 <tr><th>GitHub</th><td><a v-bind:href="team_content.GitHub">リポジトリを見る</a> </td></tr>
+                                <tr><th>説明</th><td><nuxt-link :to="team_content._path">説明を確認する</nuxt-link></td></tr>
                             </tbody>
                         </table>
                     </div>
