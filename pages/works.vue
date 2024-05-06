@@ -49,9 +49,15 @@
         }
 
         @include mq(sp){
+            width: 90%;
+
             // fullのmin-widthの打ち消し
             min-width: initial;
-            width: 80%;
+
+            // margin-leftの打ち消しと中央揃え
+            margin-left: initial;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         background-color: #F2A0A199;
