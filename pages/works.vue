@@ -120,6 +120,7 @@
 interface displayData{
     title: string;
     lang: string;
+    framework: string;
     GitHubLink: string;
     description: string;
     MarkDownPath: string;
@@ -141,9 +142,15 @@ works._rawValue.forEach((work) => {
     let addWork: displayData = {
         title: work.title, 
         lang: work.lang,
+        framework: '',
         GitHubLink: work.GitHub,
         description: work.description,
         MarkDownPath: work._path
+    }
+
+    // add framework
+    if(work.framework !== null){
+        addWork.framework = work.framework
     }
 
     if(addWork.MarkDownPath.includes('private')){
@@ -178,6 +185,7 @@ works._rawValue.forEach((work) => {
                             <tr><th>言語</th><td>{{private_work.lang}}</td></tr>
                             <tr><th>概要</th><td>{{private_work.description}}</td></tr>
                             <tr><th>GitHub</th><td><a v-bind:href="private_work.GitHubLink">リポジトリを見る</a> </td></tr>
+                            <tr v-if="private_work.framework"><th>フレームワーク</th><td>{{private_work.framework}}</td></tr>
                             <tr><th>説明</th><td><nuxt-link :to="private_work.MarkDownPath">説明を確認する</nuxt-link></td></tr>
                         </tbody>
                     </table>
