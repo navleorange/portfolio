@@ -43,15 +43,15 @@
         height: 250px;
         border: 1px solid gray;
 
-        @include mq(sp){
-            width: 100%;
-            max-width: 300px;
-            height: 200px;
-        }
-
         @include mq(full){
             min-width: 600px;
             margin-left: 30px;
+        }
+
+        @include mq(sp){
+            // fullのmin-widthの打ち消し
+            min-width: initial;
+            width: 80%;
         }
 
         background-color: #F2A0A199;
