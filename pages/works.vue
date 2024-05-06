@@ -56,7 +56,7 @@
     .private_work, .research_work, .team_work{
         width: 100%;
         max-width: 600px;
-        height: 250px;
+        height: 270px;
         border: 1px solid gray;
         background-color: red;
 
@@ -67,9 +67,10 @@
 
         @include mq(sp){
             width: 90%;
+            height: 250px;
 
             // fullのmin-widthの打ち消し
-            min-width: initial;
+            min-width: 300px;
 
             // margin-leftの打ち消しと中央揃え
             margin-left: initial;
@@ -97,6 +98,7 @@
             height: 70%;
 
             th{
+                width: 25%;
                 padding-left: 10px;
                 &::after{
                     content: ":";
@@ -120,6 +122,7 @@
 interface displayData{
     title: string;
     lang: string;
+    library: string;
     framework: string;
     GitHubLink: string;
     description: string;
@@ -142,6 +145,7 @@ works._rawValue.forEach((work) => {
     let addWork: displayData = {
         title: work.title, 
         lang: work.lang,
+        library: work.library,
         framework: work.framework,
         GitHubLink: work.GitHub,
         description: work.description,
@@ -180,6 +184,7 @@ works._rawValue.forEach((work) => {
                             <tr v-if="private_work.lang"><th>言語</th><td>{{private_work.lang}}</td></tr>
                             <tr><th>概要</th><td>{{private_work.description}}</td></tr>
                             <tr><th>GitHub</th><td><a v-bind:href="private_work.GitHubLink">リポジトリを見る</a> </td></tr>
+                            <tr v-if="private_work.library"><th>ライブラリ</th><td>{{private_work.library}}</td></tr>
                             <tr v-if="private_work.framework"><th>フレームワーク</th><td>{{private_work.framework}}</td></tr>
                             <tr><th>説明</th><td><nuxt-link :to="private_work.MarkDownPath">説明を確認する</nuxt-link></td></tr>
                         </tbody>
