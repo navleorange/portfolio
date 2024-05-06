@@ -12,9 +12,6 @@
     padding: 1% 3%;
 
     :deep(h1){
-        // border-top: solid 3px yellowgreen;
-        // border-bottom: solid 3px yellowgreen;
-        // margin-bottom: 5px;
         height: 3.5rem;
         display: flex;
         align-items: center;
@@ -39,11 +36,19 @@
         border-left: solid 5px yellowgreen;
         border-bottom: solid 2px #d7d7d7;/*下線*/
         padding-left: 7px;
+
+        @include mq(sp){
+            width: 80%;
+        }
     }
 
     :deep(h3), :deep(h4){
         height: 2rem;
         width: 35%;
+
+        @include mq(sp){
+            width: 70%;
+        }
     }
 
     :deep(blockquote){
