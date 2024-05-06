@@ -11,7 +11,7 @@
         font-size: 10px;
     }
 
-    .private_works_container, .team_works_container{
+    .private_works_container, .research_works_container, .team_works_container{
         // 2列中央揃えでcontentの表示
         width: 100%;
         display: flex;
@@ -36,8 +36,7 @@
     }
 
     h3{
-        width: 50%;
-        margin-left: 65px;
+        width: 60%;
 
         @include mq(sp){
             margin-left: 15px;
@@ -54,7 +53,7 @@
         padding-left: 7px;
     }
 
-    .private_work, .team_work{
+    .private_work, .research_work, .team_work{
         width: 100%;
         max-width: 600px;
         height: 250px;
@@ -151,6 +150,11 @@ works._rawValue.forEach((work) => {
         private_works.push(addWork);
     }
     else if(addWork.MarkDownPath.includes("research")){
+
+        if(work.page !== null){
+            addWork.MarkDownPath = work.page
+        }
+
         research_works.push(addWork);
     }
     else if(addWork.MarkDownPath.includes("team")){
@@ -184,7 +188,7 @@ works._rawValue.forEach((work) => {
         <div v-if="research_works.length !== 0" class="research_works_container">
             <h3>研究関連の開発物</h3>
             <div v-for="research_work in research_works" :key="research_work.MarkDownPath">
-                <div class="private_work">
+                <div class="research_work">
                     <h2>{{research_work.title}}</h2>
                     <table>
                         <tbody>
