@@ -21,8 +21,6 @@
 
     h1{
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;
         text-align: center;
         height: 3.5rem;
         display: flex;
@@ -35,6 +33,25 @@
 
     h2{
         text-align: center;
+    }
+
+    h3{
+        width: 50%;
+        margin-left: 65px;
+
+        @include mq(sp){
+            margin-left: 15px;
+        }
+
+        text-align: center;
+        position: relative;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        background-color: #8dd98d33;
+        border-left: solid 5px yellowgreen;
+        border-bottom: solid 2px #d7d7d7;/*下線*/
+        padding-left: 7px;
     }
 
     .private_work, .team_work{
@@ -165,7 +182,7 @@ works._rawValue.forEach((work) => {
         </div>
 
         <div v-if="research_works.length !== 0" class="research_works_container">
-            <h2>研究関連の開発物</h2>
+            <h3>研究関連の開発物</h3>
             <div v-for="research_work in research_works" :key="research_work.MarkDownPath">
                 <div class="private_work">
                     <h2>{{research_work.title}}</h2>
@@ -197,6 +214,5 @@ works._rawValue.forEach((work) => {
                 </div>
             </div>
         </div>
-
     </div>
 </template>
