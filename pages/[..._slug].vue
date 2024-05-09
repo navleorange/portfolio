@@ -2,6 +2,12 @@
 
 .slug_content{
     margin-top: 5%;
+
+    @include mq(sp){
+        margin-top: 20%;
+        font-size: 10px;
+    }
+
 }
 
 </style>
