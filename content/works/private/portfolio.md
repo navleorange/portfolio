@@ -25,6 +25,6 @@ GitHub:[navleorange.github.io](https://github.com/navleorange/navleorange.github
 所属しているサークルの[Webサイト](https://github.com/szpp-dev-team/szpp-dev-team.github.io)の開発やアルバイトで携わったシステム開発にVue.jsが使用されており、どのような物なのか興味を持ったためVue.jsを使用することにしました。これに加え、開発前にVue.js のフレームワークとしてNuxt3があることを知ったためNuxt3も使用することにしました。
 
 ## 開発時に工夫した点
-PCとスマートフォンのどちらでWebページを開いてもあまり見づらくならないようにレスポンシブ対応をしました。またGitHub Actionsを利用することで、GitHubにpushした際に自動で更新内容が反映されるようにしました。
+PCとスマートフォンのどちらでWebページを開いてもあまり見づらくならないようにレスポンシブ対応をしました。またGitHub Actionsを利用することで、GitHubにpushした際に自動で更新内容が反映されるようにしました。パッケージマネージャにnpmではなくyarnを使用することで、インストールの速度が早くなるようにしました。
 
 ::
