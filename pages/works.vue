@@ -36,7 +36,10 @@
     }
 
     h3{
-        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
 
         @include mq(sp){
             margin-left: 15px;
@@ -58,10 +61,10 @@
         max-width: 600px;
         height: 270px;
         border: 1px solid gray;
-        background-color: red;
 
         @include mq(full){
             min-width: 600px;
+            margin-right: 30px;
             margin-left: 30px;
         }
 
