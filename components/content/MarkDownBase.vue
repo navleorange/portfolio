@@ -56,6 +56,14 @@
         padding-left: 10px;
     }
 
+    :deep(img){
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        max-height: 500px;
+    }
+
 }
 
 </style>
