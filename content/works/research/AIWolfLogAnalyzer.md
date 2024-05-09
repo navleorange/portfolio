@@ -4,4 +4,5 @@ description: 人狼知能大会自然言語部門向けのログファイルを�
 lang: Python3
 GitHub: https://github.com/aiwolfdial/AIWolfLogAnalyzer
 page: /research
+display_order: 1
 ---

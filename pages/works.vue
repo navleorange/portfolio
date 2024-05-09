@@ -118,6 +118,8 @@
 </style>
 
 <script setup lang="ts">
+import func from "~/vue-temp/vue-editor-bridge";
+
 
 interface displayData{
     title: string;
@@ -127,12 +129,12 @@ interface displayData{
     GitHubLink: string;
     description: string;
     MarkDownPath: string;
+    displayOrder: number;
 }
 
 // search /content/works contents 
 const { data:works } = await useAsyncData("works", () =>
 queryContent("works").find())
-
 
 // divide
 let private_works: displayData[] = [];
@@ -149,7 +151,8 @@ works._rawValue.forEach((work) => {
         framework: work.framework,
         GitHubLink: work.GitHub,
         description: work.description,
-        MarkDownPath: work._path
+        MarkDownPath: work._path,
+        displayOrder: work.display_order
     }
 
     if(addWork.MarkDownPath.includes('private')){
@@ -168,6 +171,19 @@ works._rawValue.forEach((work) => {
     }
 
 })
+
+// sort by display_order
+private_works.sort(
+    function(a,b){
+        if(a.displayOrder !== b.displayOrder){
+            return a.displayOrder - b.displayOrder;
+        }
+        else{
+            return a.title <= b.title;
+        }
+
+    }
+);
 
 </script>
 

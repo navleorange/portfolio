@@ -4,6 +4,7 @@ description: 大学の成績が追加された際にX(旧Twitter)とSlackで通�
 lang: Python3
 library: selenium
 GitHub: https://github.com/navleorange/tweet-performance
+display_order: 1
 ---
 
 ::MarkDownBase
