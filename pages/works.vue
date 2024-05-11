@@ -81,7 +81,7 @@
             margin-right: auto;
         }
 
-        background-color: #F2A0A180;
+        background-color: #ABD9DE66;
 
         // 角を丸くする
         border-radius: 20px;
