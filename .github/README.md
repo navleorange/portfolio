@@ -1,6 +1,8 @@
-# portfolio-nuxt
+# portfolio
 
 # GitHub Pages
+今までの経験や活動をまとめたポートフォリオのページです。
+
 https://navleorange.github.io
 
 ## Build Setup
